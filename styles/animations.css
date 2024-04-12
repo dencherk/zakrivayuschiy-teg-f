@@ -14,11 +14,11 @@
 */
 @keyframes pointer {
     0% {
-      left: 0;
+      left: -15px;
     }
   
     100% {
-      left: 4px;
+      left: -14px;
     }
   }
 
@@ -82,11 +82,11 @@
   }
   
   .like-icon.is-liked .heart {
-    animation: heartbig 0.3s 2 ease-in alternate;
+    animation: heartbig 0.3s 1 ease-in alternate;
   }
   
   .like-icon.is-liked .sparks {
-    animation: sparks 0.3s 0.3s 2 ease-in alternate;
+    animation: sparks 0.3s 0.3s 1 ease-in alternate;
   }
 
   @keyframes heartbig {

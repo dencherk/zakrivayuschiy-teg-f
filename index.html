@@ -58,7 +58,7 @@
             <img
               src="./images/start.jpg"
               alt="кнопка запуска"
-              class="card__image-img img__start"
+              class="card__image-img filter-sepia"
             />
           </div>
           <div class="card__text">
@@ -72,6 +72,7 @@
           <div class="card__button">
             <button type="button" class="card__icon-button">
               <svg
+                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 class="like-icon"
                 width="39"
@@ -117,7 +118,7 @@
             <img
               src="./images/study.jpg"
               alt="процесс обучения"
-              class="card__image-img img__study"
+              class="card__image-img filter-invert"
             />
           </div>
           <div class="card__text">
@@ -136,6 +137,7 @@
           <div class="card__button">
             <button type="button" class="card__icon-button">
               <svg
+                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 class="like-icon"
                 width="39"
@@ -181,7 +183,7 @@
             <img
               src="./images/next.jpg"
               alt="по лестнице к звездам"
-              class="card__image-img img__next"
+              class="card__image-img filter-grayscale-invert"
             />
           </div>
           <div class="card__text">
@@ -195,6 +197,7 @@
           <div class="card__button">
             <button type="button" class="card__icon-button">
               <svg
+                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 class="like-icon"
                 width="39"
@@ -240,7 +243,7 @@
             <img
               src="./images/code.jpg"
               alt="html код на экране"
-              class="card__image-img img__code"
+              class="card__image-img filter-saturate"
             />
           </div>
           <div class="card__text">
@@ -256,6 +259,7 @@
           <div class="card__button">
             <button type="button" class="card__icon-button">
               <svg
+                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 class="like-icon"
                 width="39"
@@ -301,7 +305,7 @@
             <img
               src="./images/heart.jpg"
               alt="светящееся сердце из диодов на песке"
-              class="card__image-img img__heart"
+              class="card__image-img filter-brightness"
             />
           </div>
           <div class="card__text">
@@ -318,6 +322,7 @@
           <div class="card__button">
             <button type="button" class="card__icon-button">
               <svg
+                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 class="like-icon"
                 width="39"
@@ -363,7 +368,7 @@
             <img
               src="./images/hand.jpg"
               alt="рука в море"
-              class="card__image-img img__hand"
+              class="card__image-img filter-blur"
             />
           </div>
           <div class="card__text">
@@ -377,6 +382,7 @@
           <div class="card__button">
             <button type="button" class="card__icon-button">
               <svg
+                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 class="like-icon"
                 width="39"
@@ -422,7 +428,7 @@
             <img
               src="./images/dzen.jpg"
               alt="пирамидка из камней на берегу"
-              class="card__image-img img__dzen"
+              class="card__image-img filter-opacity"
             />
           </div>
           <div class="card__text">
@@ -438,6 +444,7 @@
           <div class="card__button">
             <button type="button" class="card__icon-button">
               <svg
+                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 class="like-icon"
                 width="39"
@@ -483,7 +490,7 @@
             <img
               src="./images/cat.jpg"
               alt="спящий котик"
-              class="card__image-img img__cat"
+              class="card__image-img filer-grayscale"
             />
           </div>
           <div class="card__text">
@@ -502,6 +509,7 @@
           <div class="card__button">
             <button type="button" class="card__icon-button">
               <svg
+              aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 class="like-icon"
                 width="39"
@@ -539,39 +547,40 @@
           </div>
         </article>
         <!-- /карточка-->
+        <article class="card__save">
+          <button
+            type="button"
+            class="save__button button"
+            onclick="window['dialog-id'].showModal()"
+            aria-controls="dialog-id"
+          >
+            <svg class="save__button-icon" viewBox="0 0 40 40">
+              <use href="./svg/floppy.svg#floppy"></use>
+            </svg>
+            <span class="button__text">Сохранить&nbsp;на&nbsp;память</span>
+          </button>
+    
+          <dialog id="dialog-id" class="dialog">
+            <div class="dialog__content">
+              <svg class="dialog-icon" viewBox="0 0 40 40">
+                <use href="./svg/floppy.svg#floppy"></use>
+              </svg>
+              <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
+            </div>
+            <form method="dialog">
+            <button
+              class="close__button button"
+              type="button"
+              onclick="window['dialog-id'].close();"
+            >
+              <span class="button__text modal__close">ok</span>
+            </button>
+          </form>
+          </dialog>
+        </article>
       </section>
     </main>
-    <footer class="footer">
-      <button
-        type="button"
-        class="save__button button"
-        onclick="window['dialog-id'].showModal()"
-        aria-controls="dialog-id"
-      >
-        <svg class="save__button-icon" viewBox="0 0 40 40">
-          <use href="./svg/floppy.svg#floppy"></use>
-        </svg>
-        <span class="button__text">Сохранить&nbsp;на&nbsp;память</span>
-      </button>
-
-      <dialog id="dialog-id" class="dialog">
-        <div class="dialog__content">
-          <svg class="dialog-icon" viewBox="0 0 40 40">
-            <use href="./svg/floppy.svg#floppy"></use>
-          </svg>
-          <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
-        </div>
-        <form method="dialog">
-        <button
-          class="close__button button"
-          type="button"
-          onclick="window['dialog-id'].close();"
-        >
-          <span class="button__text modal__close">ok</span>
-        </button>
-      </form>
-      </dialog>
-    </footer>
+    
     <script src="./scripts/like.js"></script>
   </body>
 </html>
