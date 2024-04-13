@@ -17,7 +17,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--main-font), sans-serif;
+  font-family: var(--main-font , sans-serif);
   background-color: var(--background-color);
   background: var(--background-gradient);
   color: var(--accent-color);
@@ -42,7 +42,7 @@
   align-items: center;
   justify-content: center;
   background-color: var(--background-color);
-  font-family: var(--accent-font), fantasy, sans-serif;
+  font-family: var(--accent-font , fantasy, sans-serif);
   text-transform: uppercase;
   border: 2px solid var(--accent-color);
   padding-block-start: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
@@ -81,7 +81,7 @@
   background-color: transparent;
   text-transform: uppercase;
   border: none;
-  font-family: var(--accent-font), fantasy, sans-serif; 
+  font-family: var(--accent-font, fantasy, sans-serif); 
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
@@ -164,7 +164,7 @@
 }
 
 .card__image-text {
-  font-family: var(--accent-font), fantasy, sans-serif;
+  font-family: var(--accent-font, fantasy, sans-serif);
   color: var(--accent-color);
   font-size: 14px;
   font-weight: 400;
@@ -272,7 +272,7 @@
 
 .button__text {
   z-index: 1;
-  font-family: var(--accent-font), fantasy, sans-serif;
+  font-family: var(--accent-font, fantasy, sans-serif);
   color: var(--button-text-color);
   font-weight: 400;
   font-size: 14px;
@@ -333,7 +333,7 @@
 
 .dialog__text {
   color: var(--accent-color);
-  font-family: var(--accent-font), fantasy, sans-serif;
+  font-family: var(--accent-font, fantasy, sans-serif);
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
