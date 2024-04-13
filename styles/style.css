@@ -78,10 +78,10 @@
 
 .theme-menu__button {
   position: relative;
+  font-family: var(--accent-font, fantasy, sans-serif);
   background-color: transparent;
   text-transform: uppercase;
   border: none;
-  font-family: var(--accent-font, fantasy, sans-serif); 
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
